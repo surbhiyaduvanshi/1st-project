@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spoon</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        </style>
+     <style>
+        ibm-plex-mono-light {
+              font-family: "IBM Plex Mono", monospace;
+              font-weight: 100;
+              font-style: normal;
+}
+        .navbar{
+            /* display: flex; */
+            background-color: rgb(98, 193, 98);
+            cursor: pointer;
+        }
+        .nav2{
+            display: flex;
+        }
+        .logo{
+            width: 200px;
+            height: 70px;
+            padding-left: 150px;
+            padding-top: 20px;
+    
+
+        }
+        .header{
+            background-color: rgb(98, 193, 98);
+            height: 580px;
+        }
+        .list{
+            display: flex;
+            list-style: none;
+            margin-left: 350px;
+            font-size: 17px;
+            font-weight: 40px;
+            color: white;
+            margin-top: 30px;
+            
+        }
+        .list2{
+            padding-left: 50px;
+            
+        }
+        .list2 a{
+            text-decoration: none;
+            color: white;
+        }
+        .btn1{
+            padding-left: 50px;
+            padding-bottom: 40px;
+            margin-bottom: 30px;
+        }
+        .btn1 button{
+            background-color:rgb(98, 193, 98) ;
+            border: 2px solid white;
+            border-radius: 8px;
+            height: 35px;
+            width: 130px;
+            color: white;
+            font-size: 14px;
+            color: white;
+            cursor: pointer;
+            font-weight: 700;
+            }
+            .btn1 :hover{
+                background-color: white;
+                color: black;
+            }
+        .logo img{
+            height: 40px;
+        }
+        .text{
+            margin-left: 150px;
+            color: white;
+        }
+        .about a{
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            margin-left: 10px;
+        }
+        .h1{
+            font-size: 72px;
+            /* font-weight: bolder; */
+            width: 750px;
+            height: 120px;
+            padding-bottom: 30px;
+            font-family: 'Libre Franklin', sans-serif;
+            color: #fff;
+            line-height: 78px;
+            font-weight: 800;
+            word-spacing: 1px;
+            letter-spacing: -1px;
+    
+
+        }
+        .para1{
+            width: 600px;
+            height: auto;
+            font-size: 15px;
+            margin-top: -20px;
+            /* font-style:initial; */
+            font-family: 'IBM Plex Mono', sans-serif;
+
+
+        }
+        .center{
+            margin-left: 335px;
+            color: white;
+            margin-top: 100px;
+        }
+        .center h1{
+            font-size: 72px;
+            font-weight: 800;
+            font-family: 'Libre Franklin', sans-serif;
+            margin-top: 30px;
+        }
+        
+         .btn3{
+           
+            height: 45px;
+            width: 160px;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: rgb(83, 206, 83);
+            margin-left: 300px;
+            margin-top: 30px;
+            cursor: pointer;
+            border: 1px solid rgb(83, 206, 83);
+            border-radius:5px;
+
+         }
+        
+         .count{
+            background-color: rgb(255, 255, 255);
+            height: 1600px;
+         }
+         .s1{
+            margin-left: 160px;
+            width: 570px;
+            padding-top: 100px;
+            font-size: 27px;
+         }
+         .s1 p{
+            color:rgb(181, 181, 181)
+         }
+         .s1 span{
+            font-weight: bolder;
+            color: black;
+         }
+         .picture{
+            background: url("https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b6afd6941c616fe3769bdf2_image-premium-banner-2.jpg");
+            background-size: cover;
+            width: 1437px;
+            height: 740px;
+            margin-left: 32px;
+            margin-top: 70px
+         }
+
+         .pro{
+            height: 180px;
+            width: 1200px;
+            margin-left: 130px;
+            display: flex;
+            margin-top: -50px;
+            background-color: white;
+            box-shadow: 2px 4px 8px rgb(207, 207, 207) ;
+         }
+         .pro img{
+            width: 60px;
+            height: 60px;
+            margin-top: 50px;
+            margin-left: 40px;
+
+         }
+         .pro h3{
+            width: 300px;
+            padding-left: 60px;
+            font-size: 20px;
+            padding-top: 30px;;
+         }
+         .pro p{
+            padding-left: 60px;
+            font-family:'Libre Franklin', sans-serif ;
+            font-size: 15px;
+            color:rgb(181, 181, 181);
+            word-spacing: 8px;
+            width: 900px;
+    
+
+         }
+         .people{
+            text-align: center;
+            margin-top: 120px;
+         }
+         .people span{
+            color: grey;
+         }
+         .people p{
+            width: 750px;
+            text-align: center;
+            margin-left: 370px;
+            font-family: 'Libre Franklin', sans-serif;
+            color: #5ab963;
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 300;
+         }
+         .profile img{
+            border-radius: 80%;
+            /* margin-top: 30px; */
+            height: 45px;
+            margin-left: 60px;
+         }
+         .s9{
+            /* margin-left: 10px; */
+            color: black;
+            font-weight: 200;
+            padding-top: 20px;
+            height: 30px;
+            width: 120px;
+         }
+         .profile{
+            display: flex;
+            margin-left: 600px;
+         }
+         .class{
+            height: 400px;
+            /* background-color: red; */
+         }
+         .lst{
+            height: 500px;
+            background-color: aqua;
+         }
+         .food{
+            display: flex;
+            
+        }
+        .food-img1{
+            margin-left: 100px;
+            margin-top: 130px;
+        }
+        .about-food1{
+            width: 380px;
+            
+            margin-left: 400px;
+            margin-top: 140px;
+        }
+        
+        .about-food1 h3{
+            color: rgb(167, 167, 167);
+
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 22px;
+            line-height: 36px;
+            font-weight: 300;
+            /* height: 90px; */
+        }
+        .about-food1 h3 span{
+            color: #000;
+    font-weight: 800;
+    height: 30px;
+        
+        }
+        .about-food1 p{
+        font-size: 15px;
+        margin-top: 24px;
+        font-family: 'IBM Plex Mono', sans-serif;
+        color: #999;
+        letter-spacing: 1px;
+        line-height: 20px;
+        }
+        .about-food2 p{
+        font-size: 15px;
+        margin-top: 24px;
+        font-family: 'IBM Plex Mono', sans-serif;
+        color: #999;
+        letter-spacing: 1px;
+        line-height: 20px;
+        }
+        .about-food2 h3{
+            color: rgb(167, 167, 167);
+
+            font-family: 'Libre Franklin', sans-serif;
+            font-size: 22px;
+            line-height: 36px;
+            font-weight: 300;
+            
+        }
+        .about-food2 h3 span{
+            color: #000;
+    font-weight: 800;
+    height: 30px;
+        }
+        .about-food2{
+            width: 380px;
+            margin-left: 125px;
+    margin-top: 56px;
+
+
+        }
+        .food-img2{
+            margin-left: 140px;
+            margin-top:80px ;
+        }
+        
+
+        .deal{
+            height: 200px;
+        }
+        
+        .deal-1 p{
+            /* margin-left: 300px; */
+            padding-top: 80px;
+            text-align: center;
+            font-weight: bolder;
+
+        }
+        .deal-1 a{
+            margin-left: 650px;
+            text-decoration: none;
+            color: rgb(45, 192, 45);
+            font-size: 13px;
+            
+
+        }
+        .last{
+            background-color:#fafafa;
+            height: 400px;
+            margin-top: 100px;
+            display: flex;
+        }
+        .start{
+              
+              width: 500px;
+              margin-left: 150px;
+              height: 150px;
+              padding-top: 100px;
+              font-size: 25px;
+              color: lightgrey;
+        }
+        .st-1{
+            /* margin-top: 80px;   */
+            color: green;
+            font-weight: bolder;
+            font-size: larger;
+            
+
+
+        }
+        .st-2 span{
+             font-weight: bolder;
+             color: black;
+             
+
+        }
+        .st-2 p{
+          
+          color:lightgray;
+
+         }
+         .start button{
+            display: flex;
+         }
+         .btn2{
+            background-color:rgb(98, 193, 98) ;
+            border: 2px solid white;
+            border-radius: 6px;
+            height: 50px;
+            width: 150px;
+            color: white;
+            font-size: 18px;
+            color: white;
+            margin-left: 400px;
+            margin-top: 180px;
+            cursor: pointer;
+           }
+           .btn2:hover{
+            background-color: rgb(32, 150, 32);
+           }
+           .footer{
+            height: 400px;
+            background-color: black;
+            color: white;
+            display: flex;
+
+           }
+           .feature{
+            display: flex;
+            margin-left: 300px;
+            text-decoration: none;
+            margin-top: 100px;
+            justify-content: space-between;
+           }
+           .main{
+            margin-top: 100px;
+            margin-left: 100px;
+           }
+           .feature ul{
+            list-style: none;
+            font-size: 12px;
+            line-height: 20px;
+            width: 60px;
+            
+            
+           }
+           
+         .icon{
+            margin-left: 110px;
+            margin-top: 115px;
+            padding-left: 20px;
+            /* width: 15px;
+            height: 15px; */
+         }
+         .f1 ul li{
+            margin-top: 20px;
+            width: 50px;
+            height: 25px;
+            margin-left: 20px;
+         }
+         .icon i{
+          padding-left: 20px;  
+         }
+         .f2 ul li{
+            margin-top: 20px;
+            width: 140px;
+            height: 25px;
+         }
+          .line-1{
+            height: 1px;
+           background-color: rgb(163, 163, 163);
+           width: 1100px;
+           margin-left: 210px;
+        }
+    </style>
+
+</head>
+<body>
+    <body>
+        <div class="header">
+        <nav class="navbar">
+            <div class="nav2">
+                <div class="logo">
+                    <a href="project.html">
+                        <img src="file:///C:/anjali/demo/About_files/5b680f7ddc6fa8394a12fc7f_logo-spoon-white.svg" alt="">
+                    </a>
+                </div>
+                <div class="nav3">
+                <ul class="list">
+                    <li class="list2"><a href="feature.html">Features</a></li>
+                    <li class="list2"><a href="premium.html">Premium</a></li>
+                    <li class="list2"><a href="pricing.html">Pricing</a></li>
+                    <li class="list2"><a href="About.html">About</a></li>
+                    <li class="list2"><a href="">Sign in</a></li>
+                    <li class="btn1"><button>Get Started</button></li>
+                </ul>
+              </div>
+            </div>
+    
+        </nav>
+        <div class="text">
+            <div class="about">
+              <a href="premium.html" class="link">Premium
+              </a>
+             </div>
+             <h1 class="h1">Personalized and total service.</h1>
+             <p class="para1">At sint tollit veritus duo, ex tota inimicus dissentiunt usu. Dico tamquam perfecto usu id. Eu nec option perfecto vituperatoribus. Ea qui congue patrioque, quo ei recteque consequuntur.</p>
+          
+             </div>
+          </div>
+
+          <div class="count">
+            <div class="s1">
+                <p class="para"><span>Here's a different option for you. </span> Eos in maluisset mediocritatem. Cu qui admodum inimicus, te mei debet qualisque.</p>
+            </div>
+
+            <div class="picture"> </div>
+            <div class="pro">
+               <div><img src="https://uploads-ssl.webflow.com/5b681be5dc6fa89a65131967/5b681c235fc94c975348ed36_icon-feature-02.svg" alt=""></div> 
+               <div><h3>Pro ad constituto el</h3>
+                <p>Possit tritani consectetuer eu his, nusquam minimum ut per, eu eos ocurreret splendide hendrerit. Dicant placerat democritum eos id, sit mollis invidunt mediocritatem ei.</p></div> 
+            </div>
+            <div class="people">
+                <span>WHAT THE PEOPLE SAY</span>
+                <p>“Great customer service, kuddos for doing things the right way rather than the easy way. I am still getting compliments about the food served at my wedding.”</p>
+                <div class="profile">
+                  <div> <img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b6b35083d9b8429b96e2c98_image-avatar.jpg" alt=""></div>
+                    <div class="s9">Paul Morgan</div>
+                </div>
+            </div>
+        
+        </div>
+
+    
+        <!-- <div class="class"></div> -->
+        
+
+        <div class="line">
+            <div class="line-1">
+                
+            </div>
+    </div>
+        <div class="menu">
+            <div class="food">
+               
+                <div class="about-food1">
+                    <h3><span>Ex tempor euismod sapientem ouis lexor pro.</span> Ad vix dicta iudico singulis, ius ex mollis veritus.</h3>
+                    <p>Possit tritani consectetuer eu his, nusquam minimum ut per, eu eos ocurreret splendide hendrerit. Dicant placerat democritum eos id, sit mollis invidunt mediocritatem ei, ne fuisset dolores periculis sed.</p>
+                </div>
+                <div class="food-img1">
+                    <img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b683ebb5fc94c7452490bd2_image-row-01.jpg" alt="">
+                </div>
+            </div>
+            <div class="food">
+               
+                    
+                <div class="food-img2">
+                    <img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b6838dff109cf4aa0d96f64_image-row-02.jpg" alt="">
+                    
+                </div>
+                <div class="about-food2">
+                <h3><span>Te elit antiopam vix zril recusabo ut pri.</span> Quas suscipit ad mea verear vivendo tincidunt.</h3>
+                    <p>Pri cu dico labores officiis, odio principes complectitur ad sea. Sea id doctus forensibus, nec lorem vocent aliquam eu. Aliquid definitiones id cum, ad meliore perpetua referrentur sed. Quas suscipit ad mea verear vivendo tincidunt.</p>
+                </div>
+            </div>
+            <!-- <div class="deal">
+                <div class="deal-1">
+                    <p>Wanna know more about the Premium deal?</p>
+                    <a href="https://propel-template.webflow.io/premium">SEE THE FULL RANGE OF PREMIUM</a>
+                </div>
+            </div>
+        </div>
+        
+    
+        </div> -->
+        <!-- <div class="line">
+            <div class="line-1">
+                
+            </div> -->
+        <div class="last">
+       
+            <div class="start">
+                <p class="st-1">Party On -</p>
+                <p class="st-2"><span>Quas suscipit ad mea.</span> Pri cu dico labores officiis odio principes complectitur ad sea.</p>
+            </div>
+            <div>
+            <a href="start.html"><button class="btn2">Get Started</button></a>
+            </div>
+    
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="main">
+                    <a href="project.html">
+                        <img src="file:///C:/anjali/demo/About_files/5b680f7ddc6fa8394a12fc7f_logo-spoon-white.svg" alt="">
+                    </a>
+                    <p>&copy;2018 Spoon Inc, All rights reserved.</p>
+                </div>
+                <div class="feature">
+                <div class="f1">
+                    <ul>
+                        <li><a href="https://propel-template.webflow.io/features"></a>Features</li>
+                        <li><a href="https://propel-template.webflow.io/premium"></a>Premium</li>
+                        <li><a href="https://propel-template.webflow.io/pricing"></a>Pricing</li>
+                    </ul>
+                </div>
+                <div class="f1">
+                    <ul>
+                        <li><a href="https://propel-template.webflow.io/about"></a>About</li>
+                        <li><a href="https://propel-template.webflow.io/blog"></a>Blog</li>
+                        <li><a href="https://propel-template.webflow.io/contact"></a>Contact</li>
+                    </ul>
+        
+                </div>
+                <div class="f2">
+                    <ul>
+                        <li><a href="https://propel-template.webflow.io/image-license-info"></a>Image License Info</li>
+                        <li><a href="https://webflow.com/"></a>Powered by Webflow</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icon">
+                <i class="fa fa-facebook" aria-hidden="true"></i> 
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+        
+        
+            </div>
+            </div>
+        
+        </footer> 
+            
+        
+        
+    </body>
+    </html>
+        
+</body>
+</html>

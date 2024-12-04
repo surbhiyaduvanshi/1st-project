@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spoon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        </style>
+     <style>
+        ibm-plex-mono-light {
+              font-family: "IBM Plex Mono", monospace;
+              font-weight: 100;
+              font-style: normal;
+}
+        .navbar{
+            /* display: flex; */
+            background-color: rgb(98, 193, 98);
+            cursor: pointer;
+        }
+        .nav2{
+            display: flex;
+        }
+        .logo{
+            width: 200px;
+            height: 70px;
+            padding-left: 150px;
+            padding-top: 20px;
+    
+
+        }
+        .header{
+            background-color: rgb(98, 193, 98);
+            height: 700px;
+        }
+        .list{
+            display: flex;
+            list-style: none;
+            margin-left: 350px;
+            font-size: 17px;
+            font-weight: 40px;
+            color: white;
+            margin-top: 30px;
+            
+        }
+        .list2{
+            padding-left: 50px;
+            
+        }
+        .list2 a{
+            text-decoration: none;
+            color: white;
+        }
+        .btn1{
+            padding-left: 50px;
+            padding-bottom: 40px;
+            margin-bottom: 30px;
+        }
+        .btn1 button{
+            background-color:rgb(98, 193, 98) ;
+            border: 2px solid white;
+            border-radius: 8px;
+            height: 35px;
+            width: 130px;
+            color: white;
+            font-size: 14px;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+
+            }
+            .btn1 :hover{
+                background-color: white;
+                color: black;
+            }
+        .logo img{
+            height: 40px;
+        }
+        .h1{
+            font-size: 80px;
+            font-weight: 400px;
+            width: 700px;
+            height: 120px;
+            padding-bottom: 30px;
+        }
+        .para1{
+            width: 650px;
+            height: auto;
+            font-size: 15px;
+            font-family: 'IBM Plex Mono', sans-serif;
+            color: #fff;
+            font-weight: 400;
+
+        }
+        .text{
+            margin-left: 150px;
+            color: white;
+        }
+        .about a{
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            margin-left: 10px;
+        }
+        .food{
+            /* margin-top: 130px; */
+            padding-left: 35px;
+           
+        }
+        .block{
+            height: 500px;
+            border: #8f1798;
+        }
+        .dish{
+            margin-left: 400px;
+            margin-top: 80px;
+            height: 350px;
+        }
+        
+        .local span{
+            font-size: 28px;
+            font-weight:bolder;
+            color: black;
+            
+        }
+        .local{
+            font-size: 28px;
+            width: 650px;
+            text-align: center;
+            color:lightgrey
+        }
+        
+         .num span{
+            font-size: 25px;
+            font-weight:bolder;
+            color: black;
+         }
+         .num p{
+            font-size: 25px;
+            width: 500px;
+            text-align:left;
+            color:lightgrey;
+            margin-top: 100px;
+    
+
+         }
+         .ad{
+            margin-left: 150px;
+         }
+         .line{
+            width: 1200px;
+            margin-left: 150px;
+            background-color: lightgray;
+            
+         }
+         .count-1{
+            height: 250px;
+            width: 350px;
+
+         }
+         .count{
+            display: flex;
+            font-size: larger;
+            margin-top: 80px;
+            padding: 10px;
+
+         }
+         h3{
+            height: 10px;
+            
+         }
+         .count-1 p{
+            color:gray
+         }
+         .count-1 span{
+            padding-top: 10px;
+         }
+         .container-1{
+            display: flex;
+            margin-left: 125px;
+            margin-top: 70px;
+         }
+         /* .container-2{
+            display: flex;
+            margin-left: 125px; */
+
+         
+         .team span{
+            font-size: 25px;
+            font-weight:bolder;
+            color: black;
+        }
+        .team p{
+            width: 500px;
+            margin-left: 150px;
+            color: lightgray;
+            margin-top: 80px;
+            font-size:25px ;
+
+        }
+        .container-1 div{
+            margin-left: 40px;
+            box-shadow:  10px 12px 7px rgba(0, 0, 0, .05);
+        
+        }
+        
+        .container-1 p{
+            font-weight: bolder;
+            font-size: larger;
+            margin-left: 7px;
+           
+        }
+        .container-1 span{
+            color: rgb(174, 171, 171);
+            margin-left: 7px;
+            
+            
+        }
+        .last{
+            background-color:#fafafa;
+            height: 400px;
+            margin-top: 100px;
+            display: flex;
+        }
+        .start{
+              
+              width: 500px;
+              margin-left: 150px;
+              height: 150px;
+              padding-top: 100px;
+              font-size: 25px;
+              color: lightgrey;
+        }
+        .st-1{
+            /* margin-top: 80px;   */
+            color: green;
+            font-weight: bolder;
+            font-size: larger;
+            
+
+
+        }
+        .st-2 span{
+             font-weight: bolder;
+             color: black;
+             
+
+        }
+        .st-2 p{
+          
+          color:lightgray;
+
+         }
+         .start button{
+            display: flex;
+         }
+         .btn2{
+            background-color:rgb(98, 193, 98) ;
+            border: 2px solid white;
+            border-radius: 6px;
+            height: 50px;
+            width: 150px;
+            color: white;
+            font-size: 18px;
+            color: white;
+            margin-left: 400px;
+            margin-top: 180px;
+            cursor: pointer;
+           }
+           .btn2:hover{
+            background-color: rgb(32, 150, 32);
+           }
+           .footer{
+            height: 400px;
+            background-color: black;
+            color: white;
+            display: flex;
+
+           }
+           .feature{
+            display: flex;
+            margin-left: 300px;
+            text-decoration: none;
+            margin-top: 100px;
+            justify-content: space-between;
+           }
+           .main{
+            margin-top: 100px;
+            margin-left: 100px;
+           }
+           .feature ul{
+            list-style: none;
+            font-size: 12px;
+            line-height: 20px;
+            width: 60px;
+            
+            
+           }
+           
+         .icon{
+            margin-left: 80px;
+            margin-top: 115px;
+            padding-left: 20px;
+            /* width: 15px;
+            height: 15px; */
+         }
+         .icon i{
+            padding-left: 20px;
+         }
+         .f1 ul li{
+            margin-top: 20px;
+            width: 50px;
+            height: 25px;
+         }
+         .f2 ul li{
+            margin-top: 20px;
+            width: 100px;
+            height: 25px;
+         }
+
+
+     </style>
+</head>
+<body>
+    <div class="header">
+    <nav class="navbar">
+        <div class="nav2">
+            <div class="logo">
+                <a href="project.html">
+                    <img src="file:///C:/anjali/demo/About_files/5b680f7ddc6fa8394a12fc7f_logo-spoon-white.svg" alt="">
+                </a>
+            </div>
+            <div class="nav3">
+            <ul class="list">
+                <li class="list2"><a href="feature.html">Features</a></li>
+                <li class="list2"><a href="premium.html">Premium</a></li>
+                <li class="list2"><a href="pricing.html">Pricing</a></li>
+                <li class="list2"><a href="About.html">About</a></li>
+                <li class="list2"><a href="">Sign in</a></li>
+                <li class="btn1"><button>Get Started</button></li>
+            </ul>
+          </div>
+        </div>
+
+    </nav>
+
+<div class="text">
+  <div class="about">
+    <a href="https://propel-template.webflow.io/about#" class="link">About</a>
+   </div>
+   <h1 class="h1">Changing the catering game.</h1>
+   <p class="para1">At sint tollit veritus duo, ex tota inimicus dissentiunt usu. Dico tamquam perfecto 
+    usu id. Eu nec option perfecto vituperatoribus. Ea qui congue patrioque, quo ei 
+    recteque consequuntur.</p>
+
+   </div>
+</div>
+<div class="img">
+<div class="food">
+    <img src="https://uploads-ssl.webflow.com/5b680680f109cf5a2fd941ab/5b6afd6941c616fe3769bdf2_image-premium-banner-2.jpg" alt="" height="700px" width="1440px">
+</div>
+</div>
+<div>
+         <div class="dish">
+                   <p class="local"><span>We combine the benefits of the best local farms with advances made possible by technology to deliver you the best catering experience possible. </span>Food surrounds us, but we don’t always think about where it comes from or how it got to us. The way we eat and our experiences with food have huge impact on everything from the environment to our health.
+                   </p>
+               </div>
+            </div>
+            
+<div class="line">
+    <hr>
+</div>
+<div class="ad">
+    <div class="num">
+        <p><span>Ad malorum nominati vituperata vix. </span>Te omnis oporteat vis, omnes reprehendunt nam in. Cum salutatus democritum argumentum an.</p>
+    </div>
+    
+    <div class="count">
+        <div class="count-1">
+            <span><b>01</b></span>
+            <h3>Stay curious</h3>
+            <p>Esse audiam assentior pri in, ius probatus singulis ne. Exerci fastidii duo ex, ex quo unum senserit.</p>
+        </div>
+        <div class="count-1">
+            <span><b>02</b></span>
+            <h3>Be respectful</h3>
+            <p>Esse audiam assentior pri in, ius probatus singulis ne. Exerci fastidii duo ex, ex quo unum senserit.</p>
+        </div>
+        <div class="count-1">
+            <span><b>03</b></span>
+            <h3>Do good work</h3>
+            <p>Esse audiam assentior pri in, ius probatus singulis ne. Exerci fastidii duo ex, ex quo unum senserit.</p>
+        </div>
+    </div>
+
+</div>
+<div class="line">
+    <hr>
+</div>
+<div class="container">
+    <div class="team">
+        <p><span>Meet the awesome team behind Spoon.</span> We’re bridging the gap between the world’s oldest and largest industry and a future where technology can be used to solve our hardest problems.</p>
+    </div>
+    <div class="container-1">
+        <div>
+            <img src="file:///C:/anjali/demo/About_files/5b71bb4809339560ff3cb39e_image-avatar-01.jpg" alt="">
+            <p>Alex Rodriguez</p>
+            <span>CEO, Co-founder</span>
+        </div>
+        <div>
+            <img src="https://uploads-ssl.webflow.com/5b681be5dc6fa89a65131967/5b71bc0bb2819870ed8ca13b_image-avatar-07.jpg" alt="">
+            <p>Eleonore Rundottir</p>
+            <span>Planner</span>
+        </div>
+        <div>
+            <img src="https://uploads-ssl.webflow.com/5b681be5dc6fa89a65131967/5b71bc2e88664e26cfbebb95_image-avatar-09.jpg" alt="">
+            <p>Gerald Mueller</p>
+            <span>
+                Planner</span>
+        </div>
+        <div>
+            <img src="https://uploads-ssl.webflow.com/5b681be5dc6fa89a65131967/5b71bc1b9f758e4f5121484e_image-avatar-08.jpg" alt="">
+            <p>Kolby Huel
+               </p>
+            <span>Planner</span>
+        </div>
+
+
+    </div>
+    <div class="container-1">
+        <div>
+            <img src="file:///C:/anjali/demo/About_files/5b71bbe63034e3795ac009ba_image-avatar-06.jpg " alt="">
+            <p>Laney Corker</p>
+            <span>Planner</span>
+        </div>
+        <div>
+            <img src=" file:///C:/anjali/demo/About_files/5b71bb919f758e1de62144cc_image-avatar-03.jpg" alt="">
+            <p>Layla Colliera</p>
+            <span>Planner</span>
+        </div>
+        <div>
+            <img src=" file:///C:/anjali/demo/About_files/5b71bf7686ea531f9fbec814_image-avatar-011.jpg" alt="">
+            <p>Marcus Sparks</p>
+            <span>
+                CFO, Co-founder</span>
+        </div>
+        <div>
+            <img src="file:///C:/anjali/demo/About_files/5b71bbb98f97f26168e64035_image-avatar-04.jpg " alt="">
+            <p>Marlon Schumm</p>
+            <span>Planner</span>
+        </div>
+        </div>
+        <div class="container-1">
+            <div>
+                <img src=" file:///C:/anjali/demo/About_files/5b71bc7b093395d4d83cb6e9_image-avatar-010.jpg" alt="">
+                <p>Myles Jordan</p>
+                <span>Planner</span>
+            </div>
+            <div>
+                <img src=" file:///C:/anjali/demo/About_files/5b71bb713034e37524c008d9_image-avatar-02.jpg" alt="">
+                <p>Raven Jerde</p>
+                <span>CCO, Co-founder</span>
+            </div>
+            <div>
+                <img src=" file:///C:/anjali/demo/About_files/5b71bbcd9c22cb1a7c087200_image-avatar-05.jpg" alt="">
+                <p>Roma Bins</p>
+                <span>Planner</span>
+            </div>
+        </div>
+
+
+</div>
+<div class="last">
+   
+    <div class="start">
+        <p class="st-1">Party On -</p>
+        <p class="st-2"><span>Quas suscipit ad mea.</span> Pri cu dico labores officiis odio principes complectitur ad sea.</p>
+    </div>
+    <div>
+        <a href="start.html"><button class="btn2">Get Started</button></a>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div class="main">
+            <a href="project.html">
+                <img src="file:///C:/anjali/demo/About_files/5b680f7ddc6fa8394a12fc7f_logo-spoon-white.svg" alt="">
+            </a>
+            <p>&copy;2018 Spoon Inc, All rights reserved.</p>
+        </div>
+        <div class="feature">
+        <div class="f1">
+            <ul>
+                <li><a href="https://propel-template.webflow.io/features"></a>Features</li>
+                <li><a href="https://propel-template.webflow.io/premium"></a>Premium</li>
+                <li><a href="https://propel-template.webflow.io/pricing"></a>Pricing</li>
+            </ul>
+        </div>
+        <div class="f1">
+            <ul>
+                <li><a href="https://propel-template.webflow.io/about"></a>About</li>
+                <li><a href="https://propel-template.webflow.io/blog"></a>Blog</li>
+                <li><a href="https://propel-template.webflow.io/contact"></a>Contact</li>
+            </ul>
+
+        </div>
+        <div class="f2">
+            <ul>
+                <li><a href="https://propel-template.webflow.io/image-license-info"></a>Image License Info</li>
+                <li><a href="https://webflow.com/"></a>Powered by Webflow</li>
+            </ul>
+        </div>
+    </div>
+    <div class="icon">
+        <i class="fa fa-facebook" aria-hidden="true"></i> 
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+
+
+    </div>
+    </div>
+
+</footer> 
+
+</body>
+</html>
